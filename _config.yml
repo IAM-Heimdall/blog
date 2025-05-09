@@ -1,11 +1,7 @@
 # Site settings
 title: Heimdall Blog
-email: contact@iamheimdall.com
-description: >-
-  Insights and updates on secure, verifiable identity and access management 
-  for AI agents from the Heimdall team.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://blog.iamheimdall.com" # the base hostname & protocol for your site
+baseurl: "/blogs" # the subpath of your site, e.g. /blog
+url: "https://iam-heimdall.github.io"
 
 # Author information
 author:
