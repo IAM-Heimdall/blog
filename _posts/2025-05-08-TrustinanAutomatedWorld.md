@@ -9,7 +9,7 @@ excerpt: "As Artificial Intelligence (AI) agents become increasingly capable of 
 ## Power of Attorney for the AI Agent
 
 
-**On Delegation - Human and Artificial**
+### On Delegation - Human and Artificial
 
 In our daily lives, we often delegate tasks. We might ask a colleague to respond to emails while we're away, grant a family member access to a bank account to pay bills, or hire a lawyer with a power of attorney to act on our behalf in complex legal matters. Each delegation carries a different level of risk and requires a corresponding level of trust and verification. For simple tasks, a verbal agreement might suffice. For high-stakes actions, we demand formal identification, signed authorizations, and clear boundaries on the delegated authority. 
 
@@ -17,7 +17,7 @@ We need to know _who_ is acting, be sure they are _authorized_ by the principa
 
 As Artificial Intelligence (AI) agents become increasingly capable of performing sophisticated tasks autonomously, our expectations of them mirror these human-to-human delegations. We envision agents managing our schedules, conducting research, interacting with online services, and even executing transactions. Just as with human delegates, if these AI agents are to act reliably and securely on our behalf across the digital landscape, the foundational questions of identity, authorization, and accountability must be rigorously addressed. The "digital power of attorney" we grant them needs to be both robust and verifiable.
 
-**Some background: What are AI Agents?** 
+### Some background: What are AI Agents?
 
 At their core, AI agents are software systems designed to perceive their environment (digital or physical), make decisions, and take actions to achieve specific goals. 
 
@@ -32,7 +32,7 @@ A basic agent structure often involves:
 
 Furthermore, complex tasks often aren't handled by a single monolithic agent. We are increasingly seeing **multi-agent frameworks** where specialized agents collaborate to achieve an overarching goal. For instance, a "travel planning" request might involve one agent researching flight options, another finding hotel accommodations, a third processing payment information, and a coordinating agent orchestrating the entire workflow. This collaborative nature adds another layer to the identity and authorization challenge.
 
-**AI Agents Are Different – And Why It Matters**
+### AI Agents Are Different – And Why It Matters
 
 It's tempting to categorize AI agents alongside existing software like traditional bots or standard applications. However, several key distinctions necessitate a different approach to how we manage their identity and trust.
 
@@ -43,7 +43,7 @@ It's tempting to categorize AI agents alongside existing software like tradition
 
 These differences mean that treating AI agents merely as another "API client" or a "background script" using existing generic authentication methods falls short. Their enhanced capabilities and autonomy demand a more nuanced and robust framework for identity, authorization, and accountability.
 
-**Identifying, Authenticating, and Trusting AI Agents – Current Landscape.**
+### Identifying, Authenticating, and Trusting AI Agents – Current Landscape.
 
 How do systems currently attempt to identify and authorize automated entities or delegate access? Several common methods are employed, each with its strengths, weaknesses, and suitability for different contexts, especially when considering their application to AI agents.
 
@@ -58,7 +58,6 @@ How do systems currently attempt to identify and authorize automated entities or
         *   **Revocation:** Manual, often disruptive.
         *   **Audit:** Logs only show "key X was used," not _who_ or _what specific automated process_.
     *   **Unsuitability for Complex Agents:** Fails entirely for user-delegated agents needing fine-grained, context-aware permissions and clear audit trails across multiple services. Not scalable or secure for an ecosystem of diverse agents.
-
 <br><br>
 
 *   **OAuth 2.0 Client Credentials Grant**
@@ -81,7 +80,6 @@ How do systems currently attempt to identify and authorize automated entities or
         *   **Limited User Delegation Context:** Primarily identifies the compute resource or service account, not typically fine-grained user delegation for a specific task (unless complex trust policies and AssumeRole chains are implemented).
         *   **Granularity:** Permissions are often at the role level, which might be broader than needed for a specific agent task.
     *   **Unsuitability for Complex Agents:** Not suitable for agents needing to interact across different cloud providers, on-premise systems, or third-party web services. Lacks a universal, application-level agent identity.
-
 <br><br>
 
 *   **Mutual TLS Authentication (mTLS)**
@@ -107,7 +105,7 @@ How do systems currently attempt to identify and authorize automated entities or
     *   **Unsuitability for Complex Agents:** While secure for point-to-point API calls, it doesn't provide a standardized framework for agent identity across diverse services or convey the rich delegation context needed for trust and fine-grained control in an ecosystem.
 <br><br>
 
-**Closing Notes – Charting the Course for Agent Trust**
+### Closing Notes – Charting the Course for Agent Trust
 
 The existing landscape of authentication and authorization offers valuable tools, yet the unique nature of autonomous AI agents highlights critical gaps. Relying on methods designed for human users or simpler machine-to-machine interactions leaves us ill-equipped for a future populated by sophisticated, decision-making agents acting across diverse digital services.
 
@@ -118,4 +116,4 @@ To bridge this gap and enable agents to operate safely and effectively, a forwar
 3.  **End-to-End Attributable Auditing:** Interactions must generate audit trails that reliably link actions back to the specific, verified agent instance, the delegating principal, and the authorization context, even across complex, multi-agent workflows.
 4.  **Interoperable Trust Mechanisms:** A standardized framework is needed for services to dynamically verify the legitimacy of agents and their issuers, potentially incorporating verifiable attributes or reputation signals, allowing trust decisions beyond simple allow/deny lists or 1:1 relationships.
 
-Essentially, the path forward requires establishing the digital equivalent of a robust "power of attorney" system tailored for AI agents. Building this foundation – focused on verifiable identity, explicit delegation, granular control, and interoperable trust – is paramount to unlocking the vast potential of AI agents while ensuring accountability and security in our increasingly automated world.
+The path forward requires establishing the digital equivalent of a robust "power of attorney" system tailored for AI agents. Building this foundation – focused on verifiable identity, explicit delegation, granular control, and interoperable trust – is paramount to unlocking the vast potential of AI agents while ensuring accountability and security in our increasingly automated world.

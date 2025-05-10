@@ -8,7 +8,7 @@ excerpt: "AI agents are rapidly evolving from specialized, controlled applicatio
 
 ## Interaction Patterns and Opportunities in an Agent First World. 
 
-**Introduction**
+### Introduction
 
 AI agents are rapidly evolving from specialized, controlled applications into autonomous digital actors capable of performing increasingly complex tasks on behalf of users and organizations. While establishing secure authentication mechanisms for these agents is an undeniable prerequisite, the true value of robust agent identity frameworks extends far beyond preventing unauthorized access or attacks.
 
@@ -18,7 +18,7 @@ _This infrastructure doesn't just secure operations—it creates a fertile groun
 
 Here are few examples from an already unravelling universe powered by AI agents: 
 
-**The Shifting Landscape: From Direct Interaction to Agent Mediation**
+### Direct Interactions to Agent Mediation
 
 The fundamental model of information access and service interaction is already undergoing a significant shift from direct human engagement to agent-mediated experiences. Consider the evolution from traditional search engines to newer agent-based information retrieval systems:
 
@@ -36,50 +36,7 @@ This transformation extends beyond simple queries to how we will interact with v
 
 Critically, these systems must be able to differentiate between direct human interactions and those mediated by AI agents. Without robust identity mechanisms, services cannot apply appropriate rate limits, access controls, or specialized processing optimized for agent consumption patterns, nor can they accurately attribute actions or bill for services.
 
-**Beyond APIs: Agents Navigating a Multi-Modal World**
-
-While APIs offer a structured and efficient interface for agent interactions, the full spectrum of AI agent engagement will span multiple interaction methods. The power of agent identity is crucial across these diverse interfaces:
-
-*   **Web Interfaces and UI Navigation:** Many agents are already demonstrating the ability to navigate traditional web interfaces—clicking buttons, filling forms, and extracting information from human-oriented UIs. This creates opportunities for service providers to:
-    *   Enhance HTML with semantic markup optimized for agent understanding.
-    *   Implement special navigation paths or simplified UIs for verified agents.
-    *   Provide alternative content presentations based on agent identity and needs.
-
-*   **Direct System Integration:** Advanced agents will increasingly interface directly with operating systems, desktop applications, and IoT devices. Imagine a productivity assistant orchestrating actions across a user's digital environment:  
-    _Human → Task Request to Assistant →_
-    *   ├─ _Calendar Integration via OS API_  
-        ├─ _Document Analysis via Desktop Application_  
-        ├─ _Email Communication via Client UI Navigation_  
-        └─ _Meeting Setup via Video Conferencing Integration_
-
-Each integration point, whether an API, a UI, or a system-level call, requires reliable identity mechanisms to maintain security while enabling seamless operation and proper authorization across disparate systems. Service and system providers must be able to determine if interactions originate from authorized agents with delegated user authority, known agent platforms with established reputations, or within properly authenticated and permissioned execution contexts.
-
-**The Power of Synergy: Multi-Agent Collaboration**
-
-The most powerful and transformative applications will emerge when multiple specialized AI agents collaborate to accomplish complex tasks. Consider how travel planning could be revolutionized:
-
-*   **Traditional Human Workflow:**  
-    _Human → Flight Search → Flight Selection → Hotel Search → Hotel Selection → Car Rental Search → Itinerary Assembly → Payment → Confirmation_
-*   **Agent-Mediated Workflow:**  
-    _Human → Intent Expression to Travel Coordinator Agent →_
-
-├─ _Flight Agent → Multiple Airline Systems (APIs/Web UIs)_  
-├─ _Accommodation Agent → Hotel Platforms and Direct Properties (APIs/Web UIs)_  
-├─ _Transportation Agent → Rental Services and Ride Options (APIs/Mobile App Navigation)_  
-├─ _Experience Agent → Attraction/Event Platforms_  
-├─ _Payment Agent → Financial Service Providers (High Security APIs/Secure Form Completion)_  
-└─ _Coordinator Agent → Optimized Options → Human Selection → Orchestrated Execution_
-
-This sophisticated orchestration model fundamentally relies on:
-
-*   **Identity Verification Across the Chain:** Each specialist agent must authenticate to services, and the entire delegation chain (from human to coordinator to specialist) must be verifiable.
-*   **Delegated Authority:** Services must be able to confirm that the human user authorized the overarching task and the specific actions taken by each agent.
-*   **Capability Advertisement:** Agents must communicate their access permissions and functional capabilities, and services must understand these to ensure compatibility.
-*   **Granular Access Control:** Services need to precisely control which functions different types of agents can access, potentially setting transaction limits based on agent identity and delegation.
-*   **Tiered Security Requirements:** Higher authentication standards and enhanced verification (e.g., multi-factor authentication for payment agents) must be enforced for sensitive operations, considering different liability and insurance models based on agent function.
-*   **Cross-Interface Communication Protocols:** Standardized ways for agents to communicate and pass context between themselves, regardless of how they interact with external services.
-
-**Unlocking New Value: Content Optimization and Monetization**
+### Content Optimization and Monetization
 
 Content providers, particularly news organizations and media companies, face significant opportunities and challenges as AI agents increasingly mediate content discovery and consumption. Having navigated transitions from print to web to mobile, they must now prepare for agent-mediated access.
 
@@ -109,16 +66,58 @@ To thrive in this new environment, publishers could optimise by implementing:
     *   **Cross-Service Aggregation:** Agent subscriptions that span multiple publishers, offering curated access to premium sources.
 
 Consider a research agent tasked with summarizing information for a user, accessing multiple paywalled sources:  
-_User → Research Agent → Identity Verification Service →_
-
-├─ _Publisher A → API Access (Agent + User Subscription Verified) → Content with Attribution_  
-_├─ Publisher B → Web Navigation (Agent + User Credentials Verified) → Paywalled Content_  
-_├─ Publisher C → Direct License (Agent-Specific Plan Verified) → Premium Content_  
-_└─ Agent → Synthesized, Attributed Response → User_
+    _User → Research Agent → Identity Verification Service →_
+        _├─ _Publisher A → API Access (Agent + User Subscription Verified) → Content with Attribution_  
+        _├─ Publisher B → Web Navigation (Agent + User Credentials Verified) → Paywalled Content_  
+        _├─ Publisher C → Direct License (Agent-Specific Plan Verified) → Premium Content_  
+        _└─ Agent → Synthesized, Attributed Response → User_
 
 The enabling technology for this entire ecosystem is a robust identity infrastructure capable of verifying which agent is requesting, on whose behalf it's operating, its granted permissions, and how its usage should be measured and billed, regardless of the access channel.
 
-**The Foundation: Building the Future on Verifiable Agent Identity**
+### Beyond APIs: Agents Navigating a Multi-Modal World
+
+While APIs offer a structured and efficient interface for agent interactions, the full spectrum of AI agent engagement will span multiple interaction methods. The power of agent identity is crucial across these diverse interfaces:
+
+*   **Web Interfaces and UI Navigation:** Many agents are already demonstrating the ability to navigate traditional web interfaces—clicking buttons, filling forms, and extracting information from human-oriented UIs. This creates opportunities for service providers to:
+    *   Enhance HTML with semantic markup optimized for agent understanding.
+    *   Implement special navigation paths or simplified UIs for verified agents.
+    *   Provide alternative content presentations based on agent identity and needs.
+
+*   **Direct System Integration:** Advanced agents will increasingly interface directly with operating systems, desktop applications, and IoT devices. Imagine a productivity assistant orchestrating actions across a user's digital environment:  
+    _Human → Task Request to Assistant →_
+        ├─ _Calendar Integration via OS API_  
+        ├─ _Document Analysis via Desktop Application_  
+        ├─ _Email Communication via Client UI Navigation_  
+        └─ _Meeting Setup via Video Conferencing Integration_
+
+Each integration point, whether an API, a UI, or a system-level call, requires reliable identity mechanisms to maintain security while enabling seamless operation and proper authorization across disparate systems. Service and system providers must be able to determine if interactions originate from authorized agents with delegated user authority, known agent platforms with established reputations, or within properly authenticated and permissioned execution contexts.
+
+### Multi-Agent Collaboration
+
+The most powerful and transformative applications will emerge when multiple specialized AI agents collaborate to accomplish complex tasks. Consider how travel planning could be revolutionized:
+
+*   **Traditional Human Workflow:**  
+    _Human → Flight Search → Flight Selection → Hotel Search → Hotel Selection → Car Rental Search → Itinerary Assembly → Payment → Confirmation_
+*   **Agent-Mediated Workflow:**  
+    _Human → Intent Expression to Travel Coordinator Agent →_
+        ├─ _Flight Agent → Multiple Airline Systems (APIs/Web UIs)_  
+        ├─ _Accommodation Agent → Hotel Platforms and Direct Properties (APIs/Web UIs)_  
+        ├─ _Transportation Agent → Rental Services and Ride Options (APIs/Mobile App Navigation)_  
+        ├─ _Experience Agent → Attraction/Event Platforms_  
+        ├─ _Payment Agent → Financial Service Providers (High Security APIs/Secure Form Completion)_  
+        └─ _Coordinator Agent → Optimized Options → Human Selection → Orchestrated Execution_
+
+This sophisticated orchestration model fundamentally relies on:
+
+*   **Identity Verification Across the Chain:** Each specialist agent must authenticate to services, and the entire delegation chain (from human to coordinator to specialist) must be verifiable.
+*   **Delegated Authority:** Services must be able to confirm that the human user authorized the overarching task and the specific actions taken by each agent.
+*   **Capability Advertisement:** Agents must communicate their access permissions and functional capabilities, and services must understand these to ensure compatibility.
+*   **Granular Access Control:** Services need to precisely control which functions different types of agents can access, potentially setting transaction limits based on agent identity and delegation.
+*   **Tiered Security Requirements:** Higher authentication standards and enhanced verification (e.g., multi-factor authentication for payment agents) must be enforced for sensitive operations, considering different liability and insurance models based on agent function.
+*   **Cross-Interface Communication Protocols:** Standardized ways for agents to communicate and pass context between themselves, regardless of how they interact with external services.
+
+
+### The Foundation: Building the Future on Verifiable Agent Identity
 
 Implementing comprehensive agent identity systems provides the necessary technical underpinning for these advanced capabilities and business models. Key components of such an infrastructure include:
 
