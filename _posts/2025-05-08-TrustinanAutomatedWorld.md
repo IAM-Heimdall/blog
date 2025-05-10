@@ -3,7 +3,7 @@ layout: post
 title: "Navigating Trust in an Automated World"
 date: 2025-05-08 09:00:00 -0800
 author: "Heimdall Team"
-excerpt: "As Artificial Intelligence (AI) agents become increasingly capable of performing sophisticated tasks autonomously, our expectations of them mirror these human-to-human delegations. We need to know _who_ is acting, be sure they are _authorized_ by the principal, and understand precisely _what_ they are allowed to do."
+excerpt: "As Artificial Intelligence (AI) agents become increasingly capable of performing sophisticated tasks autonomously, our expectations of them mirror these human-to-human delegations. We need to know who is acting, be sure they are authorized by the principal, and understand precisely what they are allowed to do."
 ---
 
 ## Power of Attorney for the AI Agent
