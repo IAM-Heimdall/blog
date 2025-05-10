@@ -7,5 +7,5 @@ list_title: 'Blogs'
 # IAM Heimdall Blog
 
 
-[Learn more about Heimdall](https://docs.iamheimdall.com) <br>
+[Learn more](https://docs.iamheimdall.com) <br>
 [Visit Website](iamheimdall.com)
