@@ -1,7 +1,7 @@
 # Site settings
 title: Heimdall Blog
-baseurl: "/blogs" # the subpath of your site, e.g. /blog
-url: "https://iam-heimdall.github.io"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://docs.iamheimdall.com"
 
 # Author information
 author:
